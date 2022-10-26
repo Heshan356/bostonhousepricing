@@ -1,4 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <h1>Hello</h1>
+    <h1>Boston price prediction</h1>
+<div class="login">
+<form action="{{url_for('predict')}}"method='post'>
+ <input type="text"name="CRIM" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="ZN" placeholder="C" required="required" /><br>
+    <input type="text"name="INDUS" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="CHAS" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="NOX" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="RM" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="Age" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="DIS" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="RAD" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="TAX" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="PTRATIO" placeholder="CRIM" required="required" /><br>
+    <input type="text"name="B" placeholder="B" required="required" /><br>
+    <input type="text"name="LSTAT" placeholder="CRIM" required="required" /><br>
+
+
+    <button type="submit" class="btn btn-primary btn-block btn-large"><h1>Predict</h1></button>
+
+    <br>
+    <br>
+</div>
+{{prediction_text}}
+</form>
 </html>
